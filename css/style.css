@@ -1,0 +1,240 @@
+/* 共通 */
+body {
+  font-family: "Yu Gothic", YuGothic;
+  color: #474949;
+  background-color: #fff;
+}
+
+header {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.title-text {
+  display: none;
+}
+header h1 {
+  width: 200px;
+  height: 120px;
+  background: url(../img/portfolio.png);
+  margin-top: 60px;
+  background-repeat: no-repeat;
+  margin-left: 5%;
+}
+button {
+  font-size: 80%;
+  padding: 0.3em 1em 0.3em;
+  border-radius: 5px;
+  background-color: #9696e0;
+  color: #fff;
+}
+button:hover {
+  background-color: #ccccff;
+}
+
+
+/* メニューの影 */
+menu {
+  border-radius: 0px;
+  background: #ffffff;
+  box-shadow:  5px 5px 10px #c2c2c2,
+               -5px -5px 10px #ffffff;
+}
+/* メニュー */
+menu ul {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.6em;
+  padding: 10px;
+}
+menu ul li {
+  width: 100%;
+  text-align: center;
+}
+.is-active {
+  background-color: #ccccff;
+}
+
+/* メイン */
+main {
+  display: block;
+  margin-top: 250px;
+  width: 100%;
+  height: calc(100vh - 320px);
+  overflow-y: scroll;
+}
+section {
+  padding: 3% 10% 3%;
+
+} 
+h2 {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 5vh;
+  letter-spacing: 1vw;
+  padding: 0 10% 0 10%;
+  margin-bottom: 5%;
+}
+.content-block{
+  display: flex;
+  align-items: flex-start;
+  gap: 10%;
+ }
+
+ /* アバウト */
+ .about-text {
+  padding-left: 2vw;
+  border-left: 3px solid #ccccff;
+ }
+ .about-img {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 256px;
+  min-width: 256px;
+}
+.about-text p {
+  line-height: 1.5em;
+  margin: 1em;
+
+}
+.about-name {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/* works */
+.works-text {
+  padding-left: 2vw;
+  border-left: 3px solid #ccccff;
+  height: 100%;
+}
+.works-img {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 25.5%;
+} 
+.works-text p {
+  line-height: 1.5em;
+  margin: 1em;
+}
+.works-text button {
+  display: block;
+  margin-left: auto;
+  margin-right: 2em;
+}
+.works-name {
+  font-size: 120%;
+  font-weight: bold;
+}
+.works-tool {
+  color: #b2b3b3;
+  text-align: right;
+  font-size: 80%;
+}
+
+/* スキル */
+#skill-box h2 {
+  margin-bottom: 0%;
+}
+.skill-text {
+  border-left: 3px solid #ccccff;
+  padding-left: 2vw;
+}
+.skill-text h3 {
+  font-size: 120%;
+  font-weight: bold;
+  color: #b2b3b3;
+  margin-top: 5%;
+}
+
+.skill-text ul {
+  margin-left: 1em;
+  margin-top: 0.8em;
+}
+.skill-text ul ul {
+  font-size: 80%;
+  margin-left: 1em;
+}
+
+
+ /* フッター */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  font-size: small;
+  position: fixed;
+  background-color: #aab6b6;
+  color: #fff;
+}
+ .footer-contact {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.footer-copywrite {
+  margin-left: 10px;
+}
+
+
+  /* レスポンシブ対応 */
+  @media screen and (max-width: 767px) {
+
+    .content-block {
+      display: block;
+      border-top: 3px solid #ccccff;
+      padding-top: 2vh;
+      margin-top: 2vh;
+    }
+    footer {
+      text-align: center;
+    }
+    .about-img{
+      margin: auto;
+      max-width: 30%;
+      max-height: 30%;
+    }
+    .about-text,.works-text,.skill-text{
+      border-left: none;
+    }
+    #works-box .content-block {
+      display: flex;
+      gap: 0;
+    }
+    .media-sp{
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 414px) {
+
+  menu ul {
+      display: block;
+    }
+  section {
+    margin-top: 20px;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  #works-box .content-block {
+    display: block;
+    gap: 0;
+  }
+  .works-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+  }
+  }
