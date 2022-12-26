@@ -190,7 +190,18 @@ footer {
 
   /* レスポンシブ対応 */
   @media screen and (max-width: 767px) {
-
+    header {
+      height: 130px;
+    }
+    header h1 {
+      width: 200px;
+      height: 70px;
+      margin-top: 40px;
+    }
+    main {
+      margin-top: 180px;
+      height: calc(100vh - 240px);
+    }
     .content-block {
       display: block;
       border-top: 3px solid #ccccff;
@@ -217,7 +228,7 @@ footer {
     }
   }
   @media screen and (max-width: 414px) {
-
+  
   menu ul {
       display: block;
     }
